@@ -19,7 +19,7 @@ st.write("## Our dataset:")
 st.write(df)
 
 # Show a table of the top movies by budget, with a slider to limit the number shown.
-st.write("## Top highest budgeted movies:")
+st.write(f"## Top highest budgeted movies:")
 x = st.slider('Number of movies to display:', value=5, min_value=1, max_value=50)
 # Use a cache so we can load display our sorted data quickly
 @st.cache
