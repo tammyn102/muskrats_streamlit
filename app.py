@@ -10,5 +10,6 @@ st.write("""# Muskrats Streamlit App""")
 st.write("## Our dataset:")
 st.write(df)
 
-st.write("## Top ten highest budgeted movies:")
-st.write(df.sort_values("budget",ascending=False).head(10))
+st.write("## Top highest budgeted movies:")
+x = st.slider('Number of movies to display:', value=5, min_value=1, max_value=50)
+st.write(df.sort_values("budget",ascending=False).head(x))
