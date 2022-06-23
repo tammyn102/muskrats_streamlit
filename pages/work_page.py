@@ -27,3 +27,14 @@ def get_data_sorted_by_budget():
     return df.sort_values("budget",ascending=False) 
 df_sorted_by_budget = get_data_sorted_by_budget()
 st.write(df_sorted_by_budget.head(x))
+
+# Using text boxes in your streamlit app
+# st.text_input("Your name", key="name")
+# You can access the value at any point with: st.session_state.name
+
+# This is where you create the text box
+st.text_input("Search Movie", key="mov")
+# Filter this dataframe down to movies whose title match our input
+rslt_df = df[df['title'] == st.session_state.mov]
+# Print the result
+st.write(rslt_df)
