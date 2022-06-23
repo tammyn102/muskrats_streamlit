@@ -2,12 +2,11 @@
 import streamlit as st
 import pandas as pd
 
-df = pd.DataFrame({
-    'A': [1,2,3,4],
-    'B': [5,6,7,8]
-})
+# Load in data
+df = pd.read_csv("data.csv").drop(['_c0'],axis=1)
 
-st.write("Here is a data frame:")
+st.write("""# Muskrats Streamlit App""")
+st.write("## Our dataset:")
 st.write(df)
 
 map_location = pd.DataFrame(
