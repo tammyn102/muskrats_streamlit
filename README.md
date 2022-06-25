@@ -5,11 +5,23 @@
 To install streamlit, run in your command prompt/terminal:
 ```
 pip install streamlit
+```
 or
+```
 python -m pip install streamlit --user
 ```
 
-After the files have been downloaded, type into the command prompt/terminal in the repository directory:
+Then, make sure the other requirements for these pages are installed:
+```
+pip install -r requirements.txt
+```
+or
+```
+python -m pip install -r requirements.txt --user
+```
+
+
+After the Python packages have been downloaded, type into the command prompt/terminal in the repository directory:
 ```
 python -m streamlit run main_page.py
 ```
