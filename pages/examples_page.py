@@ -5,7 +5,7 @@ from matplotlib import pyplot as plt
 from plotnine import *
 
 # Set the page name
-st.sidebar.markdown("# Work Page")
+st.sidebar.markdown("# Examples Page")
 
 # Load in data, and cache it so we don't have to load in a lot of data on refresh.
 @st.cache
